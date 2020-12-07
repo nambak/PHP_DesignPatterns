@@ -1,7 +1,7 @@
 # PHP Design Patterns
 
 
-모든 소스 파일은 [DesignPatternsPHP](https://designpatternsphp.readthedocs.io/) 사이트에 있은 것을 가져왔습니다.
+모든 소스 파일은 [DesignPatternsPHP](https://designpatternsphp.readthedocs.io/) 사이트에 있는 것을 가져왔습니다.
 
 * 생성패턴
   * 추상팩토리: 구체적인 클래스를 지정하지 않고 일련의 관련 또는 종속 객체를 생성합니다. 
