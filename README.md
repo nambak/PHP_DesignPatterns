@@ -55,4 +55,8 @@
       * using multiple different webservices and adapters normalize data so that the outcome is the same for all
   * ### Bridge
     구현에서 추상화를 분리하여 둘이 독립적으로 변할 수 있도록합니다.
-
+  * ## Composite
+    개체 그룹을 개체의 단일 인스턴스와 동일한 방식으로 처리합니다.
+    * Examples
+      form 클래스 인스턴스는 form의 단일 인스턴스처럼 모든 form 요소를 처리합니다. 
+      render()가 호출되면 이후에 모든 하위 요소를 통해 실행되고 해당 요소에 대해 render()를 호출합니다.
