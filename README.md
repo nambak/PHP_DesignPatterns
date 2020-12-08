@@ -50,8 +50,9 @@
   * ### Adapter / Wrapper:
     클래스에 대한 하나의 인터페이스를 호환 가능한 인터페이스로 변환합니다. 
     어댑터를 사용하면 원래 인터페이스를 사용하는 동안 클라이언트에 인터페이스를 제공하여 호환되지 않는 인터페이스로 인해 일반적으로 할 수 없었던 클래스가 함께 작동 할 수 있습니다.
-  * Examples
-    * DB Client libraries adapter
-    * using multiple different webservices and adapters normalize data so that the outcome is the same for all
-    
+    * Examples
+      * DB Client libraries adapter
+      * using multiple different webservices and adapters normalize data so that the outcome is the same for all
+  * ### Bridge
+    구현에서 추상화를 분리하여 둘이 독립적으로 변할 수 있도록합니다.
 
