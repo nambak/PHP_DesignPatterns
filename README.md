@@ -55,8 +55,17 @@
       * using multiple different webservices and adapters normalize data so that the outcome is the same for all
   * ### Bridge
     구현에서 추상화를 분리하여 둘이 독립적으로 변할 수 있도록합니다.
-  * ## Composite
+  * ### Composite
     개체 그룹을 개체의 단일 인스턴스와 동일한 방식으로 처리합니다.
     * Examples
-      form 클래스 인스턴스는 form의 단일 인스턴스처럼 모든 form 요소를 처리합니다. 
+      * form 클래스 인스턴스는 form의 단일 인스턴스처럼 모든 form 요소를 처리합니다. 
       render()가 호출되면 이후에 모든 하위 요소를 통해 실행되고 해당 요소에 대해 render()를 호출합니다.
+  * ### Data Mapper
+    데이터 매퍼는 영구 데이터 저장소(종종 관계형 데이터베이스)와 메모리 내 데이터 표현(도메인 계층)간에 데이터의 양방향 전송을 수행하는 데이터 액세스 계층입니다. 
+    패턴의 목표는 메모리 내 표현과 영구 데이터 저장소를 서로 독립적으로 유지하고 데이터 매퍼 자체를 유지하는 것입니다. 
+    계층은 데이터 전송을 수행하는 하나 이상의 매퍼(또는 데이터 액세스 개체)로 구성됩니다. 
+    매퍼 구현은 범위가 다양합니다. 일반 매퍼는 다양한 도메인 엔터티 유형을 처리하고 전용 매퍼는 하나 또는 몇 개를 처리합니다.
+
+    이 패턴의 핵심은 Active Record 패턴과 달리 데이터 모델이 단일 책임 원칙을 따른다는 것입니다.
+    * Examples
+      * DB Object Relational Mapper (ORM) : Doctrine2 uses DAO named as “EntityRepository”
