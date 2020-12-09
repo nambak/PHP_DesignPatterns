@@ -72,5 +72,13 @@
   * ### Decorator
     클래스 인스턴스에 새 기능을 동적으로 추가합니다.
     * Examples
-      * Web Service Layer: Decorators JSON and XML for a REST service (이 경우에는 물론 이들 중 하나만 허용되어야합니다.)
-
+      * Web Service Layer: Decorators JSON and XML for a REST service (이 경우에는 물론 이들 중 하나만 허용되어야합니다.
+  * ### Dependency Injection
+    더 나은 테스트, 유지 관리 및 확장 가능한 코드를 얻기 위해 느슨하게 결합 된 아키텍처를 구현합니다.
+    * Usage
+      * DatabaseConfiguration이 주입되고 DatabaseConnection이 $config에서 필요한 모든 것을 가져옵니다. 
+        DI가 없으면 구성이 DatabaseConnection에서 직접 생성되므로 테스트 및 확장에 적합하지 않습니다.
+    * Examples
+      * Doctrine2 ORM은 연결 개체에 삽입 된 구성을 위해 의존성 주입을 사용합니다.
+        테스트 목적으로 쉽게 구성의 모의 객체를 만들고 Connection 객체에 삽입 할 수 있습니다.
+      * 많은 프레임 워크에는 이미 구성 배열을 통해 객체를 생성하고 필요한 곳에 주입하는 DI 용 컨테이너가 있습니다 (예 : 컨트롤러)
