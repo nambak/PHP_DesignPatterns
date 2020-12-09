@@ -69,3 +69,8 @@
     이 패턴의 핵심은 Active Record 패턴과 달리 데이터 모델이 단일 책임 원칙을 따른다는 것입니다.
     * Examples
       * DB Object Relational Mapper (ORM) : Doctrine2 uses DAO named as “EntityRepository”
+  * ### Decorator
+    클래스 인스턴스에 새 기능을 동적으로 추가합니다.
+    * Examples
+      * Web Service Layer: Decorators JSON and XML for a REST service (이 경우에는 물론 이들 중 하나만 허용되어야합니다.)
+
