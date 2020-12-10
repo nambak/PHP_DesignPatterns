@@ -95,3 +95,9 @@
     각 방법에 대해 여러 생성이있는 경우 Facade가 아니고 Builder 또는 [Abstract|Static|Simple] Factory [Method]입니다.
 
     가장 좋은 파사드는 인터페이스 유형 힌트 매개 변수가있는 새롭고 생성자가 없습니다. 새 인스턴스를 만들어야하는 경우 팩토리를 인수로 사용합니다.
+  * ### Fluent Interface
+    자연어 (예 : 영어)의 문장처럼 읽기 쉬운 코드를 작성합니다.
+    * Examples
+      * Doctrine2의 QueryBuilder는 아래 예제 클래스와 유사하게 작동합니다.
+      * PHPUnit은 Fluent 인터페이스를 사용하여 모의 객체를 만듭니다.
+
