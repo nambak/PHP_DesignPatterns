@@ -190,3 +190,9 @@
       * GUI에서 작업의 진행 상황을 표시하기 위해 메시지 큐 시스템
     * Note
       * PHP는 이미이 패턴을 구현하는 데 도움이 될 수있는 두 개의 인터페이스 인 SplObserver와 SplSubject를 정의하고 있습니다.
+  * ### Specification
+    객체를 확인할 수있는 비즈니스 규칙의 명확한 사양을 작성합니다. 
+    복합 사양 클래스에는 지정된 객체가 사양을 충족하는지 여부에 따라 true 또는 false를 반환하는 isSatisfiedBy라는 메서드가 하나 있습니다.
+    * Examples
+      * [RulerZ](https://github.com/K-Phoen/rulerz)
+      
