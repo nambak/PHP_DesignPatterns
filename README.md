@@ -182,5 +182,11 @@
     * 적은 수의 조건문에 더 적은 테스트 케이스가 필요함
     개체 또는 null을 반환하는 메서드는 대신 개체 또는 Null Object를 반환해야합니다. 
     Null Objects는 $obj->callSomething(); 클라이언트 코드에서 조건부 검사를 제거하여.
-    if (! is_null ($obj)) {$obj-> callSomething();}과 같은 상용구 코드를 단순화합니다.  
-    
+    if (! is_null ($obj)) {$obj-> callSomething();}과 같은 상용구 코드를 단순화합니다.
+  * ### Observer
+    개체에 대한 게시/구독 동작을 구현하기 위해 "Subject"개체가 상태를 변경할 때마다 연결된 "Observers"에게 알림이 전송됩니다. 
+    결합 된 물체의 양을 줄이는 데 사용되며 대신 느슨한 결합을 사용합니다.
+    * Examples
+      * GUI에서 작업의 진행 상황을 표시하기 위해 메시지 큐 시스템
+    * Note
+      * PHP는 이미이 패턴을 구현하는 데 도움이 될 수있는 두 개의 인터페이스 인 SplObserver와 SplSubject를 정의하고 있습니다.
