@@ -256,6 +256,16 @@
     * Examples
       * Doctrine 2 ORM: Entity와 DBAL 사이를 중재하고 객체를 검색하는 메소드를 포함하는 Repository가 있습니다.
       * Laravel Framework
+* ### Entity-Attribute-Value (EAV)
+
+  PHP로 EAV 모델을 구현하기위한 EAV (Entity-attribute-value) 패턴.
+
+  * 목적
+
+  EAV(Entity-attribute-value) 모델은 엔티티를 설명하는 데 사용할 수 있는 속성(속성, 매개 변수)의 수가 잠재적으로 방대하지만 
+  주어진 엔티티에 실제로 적용되는 숫자는 다음과 같은 엔티티를 설명하는 데이터 모델입니다. 비교적 겸손합니다.
+
+
 
 
     
